@@ -1,0 +1,16 @@
+#include <iostream>
+#include <vector>
+using std::vector;
+using std::cout;
+int main()
+{
+    vector<int> ints(10);
+    vector<int> ints2(10);
+    for (auto index = 0; index < 10; ++index){
+        ints[index] = index;
+    }
+    ints2 = ints;
+    for (int c : ints2)
+        cout << c << " ";
+        return 0;
+}
